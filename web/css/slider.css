@@ -1,0 +1,105 @@
+/*slider*/
+#slider{
+	width: 1024px;
+	margin-top: 10px;
+}
+.slider_box{
+	width: 1024px;
+	height: 470px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.silder_con{
+	height: 360px;
+	overflow: hidden;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+.silder_panel{
+	width: 1024px;
+	height: 360px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.silder_panel img{
+	width: 1024px;
+	height: 360px;
+	display: block;
+	overflow: hidden;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-bottom: 5px;
+}
+
+.silder_play{
+	display: block;
+	width: 136px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -999px;
+	position: absolute;
+	bottom: 13px;
+	background: url(../images/silder-play.png) 0 -30px no-repeat;
+}	
+.silder_play:hover{ background-position: 0 0;}
+.silder_nav{
+	width: 1024px;
+	height: 105px;
+	margin: 0 auto;
+	bottom: 0;
+	position: absolute;
+	overflow: hidden;
+	font-size: 12px;
+}
+.silder_nav li a {
+	text-decoration: none;
+	color: #000;
+}
+.silder_nav p {
+	margin-top: 5px;
+}
+
+
+.silder_nav li{
+	float: left;
+	padding: 10px;
+	width: 228px;
+	height: 105px;
+	margin-right: 10px;
+	background-image: url(../img/focusPic1.gif);
+	background-repeat: repeat-x;
+}
+.silder_nav li.current{
+	background-image: url(../img/focusPic2.gif);
+	background-repeat: repeat-x;
+
+}
+.silder_nav li.current a{
+color:#FFF;
+}
+.silder_nav li,.silder_nav img{
+	display: block;
+	height: 85px;
+	overflow: hidden;
+}
+.slider_box a.prev,.slider_box a.next{
+	display: block;
+	width: 46px;
+	height: 360px;
+	overflow: hidden;
+	text-indent: -999px;
+	position: absolute;
+	cursor: pointer;
+	background-image: url(../images/silder_btn2.png);
+	background-repeat: no-repeat;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}	
+.slider_box a.prev{left:0;background-position: left 0;}
+.slider_box a.next{right:0;background-position: right 0;}
